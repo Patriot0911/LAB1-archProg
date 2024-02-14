@@ -26,8 +26,6 @@ func (t Timestamp) String() string {
 	return t.Value[:19]
 }
 
-// sss
-
 /// TTOTOTOTOTOT
 
 func main() {
