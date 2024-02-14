@@ -7,3 +7,7 @@ import (
   "net/http"
   "time"
 )
+
+type Timestamp struct {
+  Value string `json:"time"`
+}
