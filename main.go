@@ -1,11 +1,9 @@
 package main
 
 import (
-  "encoding/json"
-  "fmt"
-  "log"
-  "net/http"
-  "time"
+	"fmt"
+	"log"
+	"net/http"
 )
 
 type Timestamp struct {
@@ -15,6 +13,10 @@ type Timestamp struct {
 const (
 	PORT = ":8795"
 )
+
+func (t Timestamp) String() string {
+	return t.Value[:19]
+}
 
 func main() {
 	fmt.Println("Server is listening on port", PORT)
