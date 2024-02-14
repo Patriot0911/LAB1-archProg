@@ -15,3 +15,7 @@ type Timestamp struct {
 const (
 	PORT = ":8795"
 )
+
+func (t Timestamp) String() string {
+  return t.Value[:19]
+}
