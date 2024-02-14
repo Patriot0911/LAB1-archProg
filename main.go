@@ -7,3 +7,7 @@ import (
   "net/http"
   "time"
 )
+
+const (
+  PORT = ":8795"
+)
